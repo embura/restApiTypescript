@@ -1,0 +1,35 @@
+{
+  "name": "restapitypescript",
+  "version": "1.0.0",
+  "description": "Typescript Node.js API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start":"npm run build && node dist/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embura/restApiTypescript.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api",
+    "rest"
+  ],
+  "author": "Jefferson S Coelho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/embura/restApiTypescript/issues"
+  },
+  "homepage": "https://github.com/embura/restApiTypescript#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.0.27",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
