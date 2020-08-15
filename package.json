@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start":"npm run build && node dist/src/index.js",
+    "start": "npm run build && node dist/src/index.js",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,12 +26,15 @@
     "url": "https://github.com/embura/restApiTypescript/issues"
   },
   "homepage": "https://github.com/embura/restApiTypescript#readme",
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  },
   "devDependencies": {
     "@types/module-alias": "^2.0.0",
     "@types/node": "^14.0.27",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "eslint": "^7.7.0",
     "typescript": "^3.9.7"
-  },
-  "dependencies": {
-    "module-alias": "^2.2.2"
   }
 }
