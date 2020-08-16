@@ -1,4 +1,4 @@
-const log = (text: string): void => {
+const log = async (text: string): Promise<void> => {
     console.log({ text });
 }
 
