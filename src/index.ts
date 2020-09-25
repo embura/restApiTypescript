@@ -1,5 +1,5 @@
-const log = async (text: string): Promise<void> => {
-    console.log({ text });
-}
+import { SetupServer } from './server';
 
-log("teste");
+const server = new SetupServer();
+
+server.init();
