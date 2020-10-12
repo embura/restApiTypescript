@@ -12,6 +12,11 @@ export class SetupServer extends Server {
     public init(): void {
         this.setupExpress();
         this.setupController();
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const endpoints = this.app._router.stack.filter((route: any) => {
+            return route.name == 'router';
+        });
+        console.debug({ endpoints });
     }
 
     private setupExpress(): void {
